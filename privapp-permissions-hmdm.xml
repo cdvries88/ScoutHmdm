@@ -1,10 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.hmdm.launcher">
+        <!-- Bestaande rechten -->
         <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.DELETE_PACKAGES"/>
         <permission name="android.permission.REBOOT"/>
+        
+        <!-- Systeeminstellingen aanpassen & Weergeven over andere apps -->
+        <permission name="android.permission.WRITE_SETTINGS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        
+        <!-- Onbekende apps installeren (Oreo+) -->
+        <permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+        
+        <!-- App-gebruiksgegevens (Usage Stats) -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        
+        <!-- Wekkers en herinneringen -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        
+        <!-- Overige noodzakelijke systeemrechten -->
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
 </permissions>
